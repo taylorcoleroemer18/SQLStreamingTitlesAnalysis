@@ -1,0 +1,38 @@
+CREATE TABLE streaming_titles (
+    title_id INT PRIMARY KEY IDENTITY(1,1),
+    title NVARCHAR(255),
+    type NVARCHAR(50),
+    release_year INT,
+    genre NVARCHAR(100),
+    platform NVARCHAR(50),
+    country NVARCHAR(100),
+    is_original BIT,
+    duration NVARCHAR(50)
+);
+
+INSERT INTO streaming_titles (title, type, release_year, genre, platform, country, is_original, duration) VALUES
+('Stranger Things', 'TV Show', 2016, 'Sci-Fi', 'Netflix', 'United States', 1, '4 Seasons'),
+('The Mandalorian', 'TV Show', 2019, 'Sci-Fi', 'Disney+', 'United States', 1, '2 Seasons'),
+('The Boys', 'TV Show', 2019, 'Action', 'Amazon Prime', 'United States', 1, '3 Seasons'),
+('Handmaid''s Tale', 'TV Show', 2017, 'Drama', 'Hulu', 'Canada', 1, '5 Seasons'),
+('Money Heist', 'TV Show', 2017, 'Thriller', 'Netflix', 'Spain', 1, '5 Seasons'),
+('Parasite', 'Movie', 2019, 'Drama', 'Hulu', 'South Korea', 0, '132 min'),
+('Encanto', 'Movie', 2021, 'Animation', 'Disney+', 'United States', 1, '99 min'),
+('The Tomorrow War', 'Movie', 2021, 'Sci-Fi', 'Amazon Prime', 'United States', 1, '138 min'),
+('Bridgerton', 'TV Show', 2020, 'Romance', 'Netflix', 'United Kingdom', 1, '2 Seasons'),
+('Only Murders in the Building', 'TV Show', 2021, 'Comedy', 'Hulu', 'United States', 1, '3 Seasons'),
+('Tenet', 'Movie', 2020, 'Action', 'Amazon Prime', 'United Kingdom', 0, '150 min'),
+('Luca', 'Movie', 2021, 'Animation', 'Disney+', 'Italy', 1, '95 min'),
+('Narcos', 'TV Show', 2015, 'Crime', 'Netflix', 'Colombia', 1, '3 Seasons'),
+('Reacher', 'TV Show', 2022, 'Action', 'Amazon Prime', 'United States', 1, '1 Season'),
+('Dopesick', 'TV Show', 2021, 'Drama', 'Hulu', 'United States', 1, '1 Season'),
+('Turning Red', 'Movie', 2022, 'Animation', 'Disney+', 'Canada', 1, '100 min'),
+('Upload', 'TV Show', 2020, 'Comedy', 'Amazon Prime', 'United States', 1, '2 Seasons'),
+('The Great', 'TV Show', 2020, 'Historical', 'Hulu', 'United Kingdom', 1, '2 Seasons'),
+('Red Notice', 'Movie', 2021, 'Action', 'Netflix', 'United States', 1, '118 min'),
+('Coco', 'Movie', 2017, 'Animation', 'Disney+', 'Mexico', 1, '105 min'),
+('The Aeronauts', 'Movie', 2019, 'Adventure', 'Amazon Prime', 'United Kingdom', 1, '101 min'),
+('The World to Come', 'Movie', 2020, 'Romance', 'Hulu', 'United States', 0, '98 min'),
+('Black Mirror', 'TV Show', 2011, 'Sci-Fi', 'Netflix', 'United Kingdom', 0, '5 Seasons'),
+('Soul', 'Movie', 2020, 'Animation', 'Disney+', 'United States', 1, '100 min'),
+('Borat 2', 'Movie', 2020, 'Comedy', 'Amazon Prime', 'Kazakhstan', 1, '96 min');
